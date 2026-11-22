@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Giác kế STEM – Đo chiều cao không cần trèo | Toán 9</title>
+<meta name="description" content="Học liệu số chủ đề STEM Toán 9: mô phỏng góc nâng, thử thách đọc giác kế, câu hỏi khởi động và video hướng dẫn đo chiều cao cột cờ. Trường THCS Rạng Đông.">
+<meta name="theme-color" content="#f4f7fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1522" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Giác kế STEM – Đo chiều cao không cần trèo">
+<meta property="og:description" content="Mô phỏng góc nâng, thử thách đọc giác kế và câu hỏi khởi động – Toán 9, THCS Rạng Đông.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/assets/media/poster-video-1.jpg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;800&display=swap">
+<link rel="stylesheet" href="/assets/css/styles.css">
+<script>
+  /* Áp dụng giao diện sáng/tối trước khi vẽ trang để không bị nháy màu */
+  (function(){try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t;}catch(e){}document.documentElement.classList.add("js");})();
+</script>
+<script src="/assets/js/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#mo-phong">Bỏ qua, đến phần mô phỏng</a>
+
+<header class="topbar">
+  <div class="wrap topbar__in">
+    <a class="brand" href="#top" aria-label="Giác kế STEM – về đầu trang">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 18a12 12 0 0 0 24 0Z" fill="currentColor" opacity=".18"/><path d="M4 18a12 12 0 0 0 24 0" fill="none" stroke="currentColor" stroke-width="2"/><rect x="2" y="15.5" width="28" height="3" rx="1.5" fill="currentColor"/><path d="M16 18v9" stroke="var(--flag)" stroke-width="2"/><circle cx="16" cy="28" r="2.2" fill="var(--flag)"/></svg>
+      <span>Giác kế <b>STEM</b></span>
+    </a>
+    <nav class="topnav" aria-label="Các phần chính">
+      <a href="#mo-phong">Mô phỏng</a>
+      <a href="#thu-thach">Thử thách</a>
+      <a href="#trac-nghiem">Trắc nghiệm</a>
+      <a href="#hoc-lieu">Học liệu</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Chuyển giao diện sáng/tối">
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero wrap">
+    <div class="hero__text">
+      <p class="kicker">Toán 9 · Bài 12 · Chủ đề STEM</p>
+      <h1>Đo chiều cao cột cờ <span class="hl">không cần trèo</span></h1>
+      <p class="lead">Chỉ cần một giác kế tự chế, một thước dây và tỉ số lượng giác. Kéo thử mô phỏng, đọc giác kế ảo, rồi kiểm tra kiến thức trước tiết học.</p>
+      <div class="cta">
+        <a class="btn btn--pri" href="#mo-phong">Bắt đầu mô phỏng</a>
+        <a class="btn btn--ghost" href="#video">Xem video</a>
+      </div>
+      <ul class="chips" aria-label="Điểm nổi bật">
+        <li>Kéo thả trực quan</li><li>Tự chấm điểm</li><li>Dùng tốt trên điện thoại</li>
+      </ul>
+    </div>
+    <figure class="hero__art" aria-hidden="true">
+      <svg viewBox="0 0 400 300" class="hero__svg">
+        <rect x="0" y="250" width="400" height="50" class="g-ground"/>
+        <line x1="0" y1="250" x2="400" y2="250" class="g-groundline"/>
+        <line x1="320" y1="250" x2="320" y2="40" class="g-pole"/>
+        <path d="M322 44h46v28h-46z" class="g-flag"/>
+        <line x1="70" y1="250" x2="70" y2="198" class="g-person"/>
+        <circle cx="70" cy="188" r="10" class="g-head"/>
+        <line x1="70" y1="190" x2="320" y2="190" class="g-horiz"/>
+        <line x1="70" y1="190" x2="320" y2="40" class="g-sight"/>
+        <path d="M120 190 A50 50 0 0 0 112.9 164.3" class="g-arc"/>
+        <text x="128" y="180" class="g-alpha">α</text>
+        <path d="M308 190v-12h12" class="g-right"/>
+        <text x="190" y="276" class="g-lbl">d</text>
+        <text x="338" y="122" class="g-lbl g-h">h</text>
+      </svg>
+      <figcaption class="formula-pill"><i>h</i> = <i>d</i>·tan <i>α</i> + <i>h</i>₀</figcaption>
+    </figure>
+  </section>
+
+  <!-- CÔNG THỨC -->
+  <section class="wrap band reveal" aria-labelledby="ct-title">
+    <h2 id="ct-title" class="sec-title">Cần đo ba đại lượng</h2>
+    <div class="trio">
+      <article class="mini"><span class="mini__sym"><i>d</i></span><h3>Khoảng cách</h3><p>Từ chỗ đứng đến chân cột, đo bằng thước dây kéo thẳng, sát mặt đất.</p></article>
+      <article class="mini"><span class="mini__sym"><i>α</i></span><h3>Góc nâng</h3><p>Đọc số chỉ <i>θ</i> của dây dọi trên giác kế, rồi tính <b><i>α</i> = |90° − <i>θ</i>|</b>.</p></article>
+      <article class="mini"><span class="mini__sym"><i>h</i>₀</span><h3>Tầm mắt</h3><p>Chiều cao từ mặt đất đến mắt người ngắm, khoảng 1,4 – 1,6 m.</p></article>
+    </div>
+  </section>
+
+  <!-- MÔ PHỎNG -->
+  <section id="mo-phong" class="wrap sec reveal" aria-labelledby="mp-title">
+    <h2 id="mp-title" class="sec-title"><span class="num">1</span>Mô phỏng đo chiều cao</h2>
+    <p class="sec-lead">Kéo các thanh trượt và quan sát chiều cao cột cờ thay đổi thế nào.</p>
+    <div class="card sim">
+      <svg id="scene" class="scene" viewBox="0 0 640 340" role="img" aria-label="Người đứng đo góc nâng tới đỉnh cột cờ"></svg>
+      <div class="sim__side">
+        <div class="ctl">
+          <label for="d"><span>Khoảng cách <i>d</i></span><output id="dv" for="d"></output></label>
+          <input id="d" type="range" min="5" max="30" step="0.5" value="12">
+        </div>
+        <div class="ctl">
+          <label for="a"><span>Góc nâng <i>α</i></span><output id="av" for="a"></output></label>
+          <input id="a" type="range" min="10" max="70" step="1" value="35">
+        </div>
+        <div class="ctl">
+          <label for="h0"><span>Tầm mắt <i>h</i>₀</span><output id="h0v" for="h0"></output></label>
+          <input id="h0" type="range" min="1" max="1.8" step="0.05" value="1.5">
+        </div>
+        <div class="result" aria-live="polite">
+          <span class="result__lbl">Chiều cao cột cờ</span>
+          <strong class="result__big" id="hv">–</strong>
+          <span class="result__calc" id="calc"></span>
+        </div>
+        <button class="btn btn--ghost btn--sm" id="resetSim" type="button">Đặt lại</button>
+      </div>
+    </div>
+    <div class="card gk-card">
+      <svg id="gk" class="gk" viewBox="-135 -92 270 232" role="img" aria-label="Giác kế với dây dọi chỉ số đo"></svg>
+      <div>
+        <h3>Giác kế dây dọi</h3>
+        <p>Dây dọi luôn thẳng đứng. Khi ống ngắm nghiêng lên góc <i>α</i>, dây dọi lệch khỏi vạch 90° đúng góc <i>α</i>.</p>
+        <p class="reading">Số chỉ <b id="thv">θ = 125°</b> ⇒ <b id="alv">α = 35°</b></p>
+        <p class="tip">Mẹo: đứng sao cho <i>α</i> khoảng 30° – 50°. Góc quá lớn thì chỉ lệch 1° cũng làm <i>h</i> sai nhiều.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- THỬ THÁCH -->
+  <section id="thu-thach" class="wrap sec reveal" aria-labelledby="tt-title">
+    <h2 id="tt-title" class="sec-title"><span class="num">2</span>Thử thách đọc giác kế</h2>
+    <p class="sec-lead">Một nhóm đã đo một vật chưa biết chiều cao. Đọc số chỉ <i>θ</i>, tính <i>α</i> rồi tính <i>h</i> (làm tròn đến hàng phần trăm).</p>
+    <div class="card challenge">
+      <div class="challenge__top">
+        <div class="given" id="given"></div>
+        <div class="streak" aria-live="polite"><span>Đúng liên tiếp</span><b id="streak">0</b></div>
+      </div>
+      <svg id="gk2" class="gk gk--lg" viewBox="-135 -92 270 232" role="img" aria-label="Giác kế của bài thử thách"></svg>
+      <form class="answer" id="ansForm" novalidate>
+        <label for="ans">Chiều cao <i>h</i> (m)</label>
+        <div class="answer__row">
+          <input id="ans" inputmode="decimal" autocomplete="off" placeholder="Ví dụ 12,35">
+          <button class="btn btn--pri" type="submit">Kiểm tra</button>
+        </div>
+      </form>
+      <div class="hint-row">
+        <button class="linkbtn" id="hintBtn" type="button" aria-expanded="false" aria-controls="hint">Gợi ý</button>
+        <button class="linkbtn" id="nextBtn" type="button">Đổi bài khác ↻</button>
+      </div>
+      <p class="hint" id="hint" hidden></p>
+      <p class="fb" id="fb2" role="status" hidden></p>
+    </div>
+  </section>
+
+  <!-- TRẮC NGHIỆM -->
+  <section id="trac-nghiem" class="wrap sec reveal" aria-labelledby="tn-title">
+    <h2 id="tn-title" class="sec-title"><span class="num">3</span>Câu hỏi khởi động</h2>
+    <p class="sec-lead">5 câu, chọn đáp án để xem ngay đúng sai và lời giải thích.</p>
+    <div class="card quiz" id="quiz">
+      <div class="quiz__head">
+        <span id="qCount">Câu 1/5</span>
+        <div class="bar" aria-hidden="true"><span id="qBar"></span></div>
+        <span id="qScore">0 điểm</span>
+      </div>
+      <div id="qBody" class="quiz__body"></div>
+      <div class="quiz__foot">
+        <button class="btn btn--pri" id="qNext" type="button" disabled>Câu tiếp theo</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section id="video" class="wrap sec reveal" aria-labelledby="vd-title">
+    <h2 id="vd-title" class="sec-title"><span class="num">4</span>Video hướng dẫn</h2>
+    <div class="videos">
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="/assets/media/poster-video-1.jpg" src="/assets/media/video-do-chieu-cao.mp4"></video>
+        <figcaption><b>Đo chiều cao không cần trèo</b><span>4 phút · góc nâng, giác kế, 4 bước đo</span></figcaption>
+      </figure>
+      <figure class="vcard">
+        <video controls preload="none" playsinline poster="/assets/media/poster-video-2.jpg" src="/assets/media/video-huong-dan-bang-tinh.mp4"></video>
+        <figcaption><b>Dùng bảng tính chiều cao</b><span>2 phút · nhập số liệu, xem sai số</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- HỌC LIỆU -->
+  <section id="hoc-lieu" class="wrap sec reveal" aria-labelledby="hl-title">
+    <h2 id="hl-title" class="sec-title"><span class="num">5</span>Tải học liệu</h2>
+    <div class="dl">
+      <a class="dl__item" href="/assets/files/BangTinh_ChieuCao_CotCo.xlsx" download>
+        <span class="dl__ic dl__ic--x" aria-hidden="true">XLSX</span>
+        <span><b>Bảng tính chiều cao cột cờ</b><small>6 trang cho 6 nhóm + Tổng hợp lớp · Excel / Google Sheets</small></span>
+      </a>
+      <a class="dl__item" href="/assets/files/BaiTrinhChieu_GiacKe_Toan9.pptx" download>
+        <span class="dl__ic dl__ic--p" aria-hidden="true">PPTX</span>
+        <span><b>Bài trình chiếu 2 tiết</b><small>21 trang, có ghi chú cho giáo viên</small></span>
+      </a>
+      <a class="dl__item" href="/assets/media/video-huong-dan-bang-tinh.mp4" download>
+        <span class="dl__ic dl__ic--v" aria-hidden="true">MP4</span>
+        <span><b>Video hướng dẫn bảng tính</b><small>Tải về để xem khi không có mạng</small></span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Thầy Trịnh Minh Tuyên</b> · Tổ Toán – Tin, Trường THCS Rạng Đông, phường Bình Thạnh, TP. Hồ Chí Minh</p>
+    <p>Hội thi thiết kế chủ đề dạy học STEM/STEAM, chủ đề dạy học số cấp Thành phố năm học 2026 – 2027</p>
+  </div>
+</footer>
+
+<nav class="tabbar" aria-label="Điều hướng nhanh">
+  <a href="#mo-phong" data-sec="mo-phong"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M6 20V9M18 20V4M6 9l12-5"/></svg>Mô phỏng</a>
+  <a href="#thu-thach" data-sec="thu-thach"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 15a8 8 0 0 0 16 0Z"/><path d="M12 15v6"/></svg>Thử thách</a>
+  <a href="#trac-nghiem" data-sec="trac-nghiem"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l2 2 4-4"/><rect x="4" y="4" width="16" height="16" rx="3"/></svg>Trắc nghiệm</a>
+  <a href="#hoc-lieu" data-sec="hoc-lieu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Học liệu</a>
+</nav>
+</body>
+</html>
